@@ -24,7 +24,3 @@ services:
         volumes:
             - ./backend:/home/www/code
         working_dir: /home/www/code
-
-
-
-connpass-member-list
