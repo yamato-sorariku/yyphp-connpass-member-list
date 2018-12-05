@@ -8,6 +8,7 @@
           type="flex" 
           vs-justify="center" 
           vs-align="center" 
+          vs-lg="6"
           vs-w="12">
           <vs-card>
             <div slot="header">
