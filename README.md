@@ -4,5 +4,5 @@
 ```
 docker-compose exec node bash
 cd /home/docs
-drakov -f events.md --public --watch
+drakov -f events.md --public --watch -p 4000
 ```
