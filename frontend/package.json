@@ -16,6 +16,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
     "cross-env": "^5.2.0",
+    "material-icons": "^0.2.3",
     "nuxt": "^2.0.0",
     "vuesax": "^3.8.0"
   },

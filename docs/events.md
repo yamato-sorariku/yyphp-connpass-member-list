@@ -1,7 +1,17 @@
 ### YYPHP Events [GET]
 # GET /events
 + Response 200 (application/json)
-    + Attributes (array[Event])
+    + Attributes 
+        + events (array)
+            + (Event)
+                + event_id: `110977` (string)
+                + title: `#YYPHP #64【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】` (string)
+            + (Event)
+                + event_id: `110978` (string)
+                + title: `#YYPHP #65【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】` (string)
+            + (Event)
+                + event_id: `110979` (string)
+                + title: `#YYPHP #66【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】` (string)
 
 # GET /events/{event_id}
 + Parameters

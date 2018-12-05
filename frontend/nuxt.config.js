@@ -29,9 +29,7 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-    '~/plugins/vuesax'
-  ],
+  plugins: ['~/plugins/vuesax'],
 
   /*
   ** Nuxt.js modules
