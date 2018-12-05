@@ -8,8 +8,9 @@ services:
         working_dir: /home/www/code
         tty: true
         ports:
-            - "3000:3000"
-            - "4000:4000"
+            - "3000:3000" #Nuxt
+            - "4000:4000" #API Mock
+            - "9005:9005" #Firebase login
     web:
         image: nginx:1.15.7-alpine
         ports:
@@ -26,3 +27,4 @@ services:
 
 
 
+connpass-member-list

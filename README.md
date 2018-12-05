@@ -1,1 +1,2 @@
-# yyphp-connpass-member-list
+# YYPHP 参加者一覧参照サイト （2018年 YYPHPアドベントカレンダー用サイト）
+
