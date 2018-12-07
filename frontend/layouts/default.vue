@@ -4,8 +4,9 @@
       class="nabarx">
       <vs-navbar-title>
         <img 
-          class="title-icon" 
-          src="yyphp_logo.png">
+          class="title-icon"
+          src="yyphp_logo.png" 
+          @click="$router.push('/')">
       </vs-navbar-title>
 
       <vs-navbar-item index="0">

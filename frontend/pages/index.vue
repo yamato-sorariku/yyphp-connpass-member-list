@@ -2,13 +2,13 @@
   <section>
     <div 
       v-for=" event in events" 
-      :key="event.event_id">
+      :key="event.id">
       <vs-row vs-justify="center">
         <vs-col 
           type="flex" 
           vs-justify="center" 
           vs-align="center" 
-          vs-lg="6"
+          vs-lg="8"
           vs-w="12">
           <vs-card>
             <div slot="header">
@@ -25,7 +25,8 @@
                 <vs-button 
                   type="gradient" 
                   color="success" 
-                  icon="description">
+                  icon="description"
+                  @click="clickDetail(event)">
                   詳細情報
                 </vs-button>
               </vs-row>
@@ -53,6 +54,11 @@ export default {
     const data = await this.$axios.$get('/events')
     this.events = data.events
     this.$vs.loading.close()
+  },
+  methods: {
+    clickDetail: function(event) {
+      this.$router.push('detail?id=' + event.id)
+    }
   }
 }
 </script>
