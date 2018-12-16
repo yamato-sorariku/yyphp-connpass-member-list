@@ -14,7 +14,7 @@
           :href="'https://yyphp.connpass.com'"
           target 
           color="success" 
-          type="filled">YYPHP COMPASS</vs-button>
+          type="filled">YYPHP CONNPASS</vs-button>
       </vs-navbar-item>
 
     </vs-navbar>

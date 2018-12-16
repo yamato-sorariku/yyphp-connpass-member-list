@@ -6,7 +6,13 @@
         vs-justify="center" 
         vs-align="center" 
         vs-lg="8"
-        vs-w="12">
+        vs-sm="12">
+        <vs-row vs-justify="flex-end">
+          <vs-button 
+            :to="'/'"
+            color="success" 
+            type="gradient">TOPへ戻る</vs-button>
+        </vs-row>
         <vs-card>
           <div slot="header">
             <h3>
@@ -14,8 +20,14 @@
             </h3>
           </div>
           <div>
-            開催日： {{ event.event_date }}<br>
-            参加者人数：{{ event.participants }} 人
+            <div>
+              <span>開催日時</span>
+              <span>{{ event.event_date }}</span>
+            </div>
+            <div>
+              <span>参加者人数</span>
+              <span>{{ event.participants }} 人</span>
+            </div>
           </div>
           <div slot="footer">
             <vs-row vs-justify="flex-end">
@@ -25,7 +37,7 @@
                 type="gradient"
                 color="success" 
                 icon="description">
-                クリップボードにコピー
+                HackMD用にコピー
               </vs-button>
             </vs-row>
           </div>
@@ -38,7 +50,7 @@
         vs-justify="center" 
         vs-align="center" 
         vs-lg="8"
-        vs-w="12">
+        vs-sm="12">
         <vs-list>
           <div 
             v-for="(frame, frameIndex) in frames" 
@@ -104,7 +116,7 @@ export default {
       for (let frame of this.frames) {
         mdText = mdText + '\n\n## ' + frame.name + '\n'
         for (let member of frame.members) {
-          mdText = mdText + '* ' + member.name + '\n'
+          mdText = mdText + '* ' + member.name + ' \n'
         }
       }
 
