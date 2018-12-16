@@ -88,7 +88,7 @@ export default {
     this.clipBoard.on('error', function(e) {})
 
     this.$vs.loading()
-    const data = await this.$axios.$get('/events/' + this.$route.query.id)
+    const data = await this.$axios.$get('/api/events/' + this.$route.query.id)
     this.event = data.event
     this.frames = data.frames
     this.$vs.loading.close()

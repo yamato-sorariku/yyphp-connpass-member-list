@@ -1,5 +1,5 @@
 ### YYPHP Events [GET]
-# GET /events
+# GET /api/events
 + Response 200 (application/json)
     + Attributes 
         + events (array)
@@ -13,7 +13,7 @@
                 + id: `110979` (string)
                 + title: `#YYPHP #66【PHPの情報交換・ワイワイ話そう・仲間作り・ゆるめ・にぎやかめ】` (string)
 
-# GET /events/{id}
+# GET /api/events/{id}
 + Parameters
     + id: `110977` (string)
 + Response 200 (application/json)

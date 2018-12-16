@@ -51,7 +51,7 @@ export default {
   }),
   mounted: async function() {
     this.$vs.loading()
-    const data = await this.$axios.$get('/events')
+    const data = await this.$axios.$get('/api/events')
     this.events = data.events
     this.$vs.loading.close()
   },
