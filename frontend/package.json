@@ -5,10 +5,10 @@
   "author": "Yamato Ashikaga",
   "private": true,
   "scripts": {
-    "dev": "HOST=0.0.0.0 API_URL=http://localhost:4000 nuxt",
+    "dev": "HOST=0.0.0.0 API_URL=http://localhost nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
+    "generate": "API_URL=https://yyphp-connpass-member-list-api.herokuapp.com nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
